@@ -1,0 +1,107 @@
+<template name="bift_edit_form">
+
+  <div class="well bs-component">
+    <h3>
+      BIFT 수정하기
+    </h3>
+    <form class="form-horizontal" id="updateBift">
+      <fieldset>
+
+        <!-- company_id 업체아이디 -->
+        <div class="form-group">
+          <label for="inputFile" class="col-md-2 control-label">업체아이디</label>
+
+          <div class="col-md-10">
+            <input type="text" name="company_id" class="form-control" value="{{_id}}" placeholder="placeholder">
+
+          </div>
+        </div>
+        <!-- bifty_table Bifty 테이블 이름(업체아이디+Bifty 아이디 : nike0000000001) -->
+        <div class="form-group">
+          <label for="inputFile" class="col-md-2 control-label">상호명</label>
+
+          <div class="col-md-10">
+            <input type="text" name="bifty_table" class="form-control" placeholder="placeholder">
+
+          </div>
+        </div>
+
+
+        <!-- bift_amount 총발행금액 -->
+        <div class="form-group">
+          <label for="inputFile" class="col-md-2 control-label">총발행금액</label>
+
+          <div class="col-md-10">
+            <input type="text" name="bift_amount" class="form-control" value="{{bift_amount}}" placeholder="placeholder">
+
+          </div>
+        </div>
+
+
+        <!-- bift_count 발행 수량 -->
+        <div class="form-group">
+          <label for="inputFile" class="col-md-2 control-label">발행 수량</label>
+
+          <div class="col-md-10">
+            <input type="text" name="bift_count" class="form-control" placeholder="placeholder">
+
+          </div>
+        </div>
+
+
+        <!-- bift_date 발행일자 -->
+        <div class="form-group">
+          <label for="inputFile" class="col-md-2 control-label">발행일자</label>
+
+          <div class="col-md-10">
+            <input type="text" name="bift_date" class="form-control" placeholder="placeholder">
+
+          </div>
+        </div>
+
+
+        <!-- bift_rate 수수료 -->
+        <div class="form-group">
+          <label for="inputFile" class="col-md-2 control-label">수수료</label>
+
+          <div class="col-md-10">
+            <input type="text" name="bift_rate" class="form-control" value="{{bift_rate}}" placeholder="placeholder">
+
+          </div>
+        </div>
+
+
+        <!-- bift_table_id 테이블 id -->
+
+        <div class="form-group">
+          <label for="inputFile" class="col-md-2 control-label">상호명</label>
+
+          <div class="col-md-10">
+            <input type="text" name="bift_table_id" value="{{bift_table_id}}" class="form-control" placeholder="placeholder">
+
+          </div>
+        </div>
+
+        <!-- Bift 이미지 -->
+        <div class="form-group">
+          <label for="inputFile" class="col-md-2 control-label">Bift 이미지</label>
+
+          <div class="col-md-10">
+            <input type="text" readonly="" class="form-control" placeholder="Browse...">
+            <input type="file" id="inputFile" multiple="">
+          </div>
+        </div>
+
+
+
+
+        <div class="form-group">
+          <div class="col-md-10 col-md-offset-2">
+            <button type="button" class="btn btn-default">Cancel</button>
+            <button type="submit" class="btn btn-primary">Submit</button>
+          </div>
+        </div>
+      </fieldset>
+    </form>
+  </div>
+</template>
